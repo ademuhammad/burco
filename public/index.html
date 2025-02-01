@@ -4,8 +4,13 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>BURCO </title>
+      <title>BURGERE </title>
+
       <link rel="stylesheet" href="css/style.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -13,23 +18,23 @@
             <nav class="container mx-auto flex items-center justify-between py-4 px-6">
                   <!-- Logo -->
                   <div class="text-2xl font-bold hover:text-gray-200 cursor-pointer">
-                        <a href="#"><img src="images/burco.svg" alt="" width="120"></a>
+                        <a href="#"><img src="images/burgerefix.svg" alt="Burco Logo" width="120"></a>
                   </div>
 
                   <!-- Navigation Links -->
                   <ul class="hidden md:flex space-x-8 font-medium">
-                        <li><a href="#" class="hover:text-gray-200">Home</a></li>
-                        <li><a href="#" class="hover:text-gray-200">About</a></li>
-                        <li><a href="#" class="hover:text-gray-200">Products</a></li>
-                        <li><a href="#" class="hover:text-gray-200">Services</a></li>
-                        <li><a href="#" class="hover:text-gray-200">Contact</a></li>
+                        <li><a href="#" class="hover:text-orange-300 transition duration-300">Home</a></li>
+                        <li><a href="#products" class="hover:text-orange-300 transition duration-300">Products</a></li>
+                        <li><a href="#about" class="hover:text-orange-300 transition duration-300">About</a></li>
+                        <li><a href="#services" class="hover:text-orange-300 transition duration-300">Services</a></li>
+                        <li><a href="#contact" class="hover:text-orange-300 transition duration-300">Contact</a></li>
                   </ul>
 
                   <!-- CTA Button -->
                   <div class="hidden md:block">
                         <a href="#"
-                              class="bg-white text-indigo-600 px-5 py-2 rounded-full shadow-md hover:bg-indigo-100 transition duration-300">
-                              Get Started
+                              class="bg-orange-500 text-white px-6 py-2 rounded-full shadow-md hover:bg-orange-600 transition duration-300">
+                              Order Now
                         </a>
                   </div>
 
@@ -46,29 +51,31 @@
             <!-- Mobile Navigation -->
             <div id="mobile-menu" class="md:hidden hidden bg-white text-gray-800 space-y-2 px-6 py-4">
                   <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Home</a>
-                  <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">About</a>
-                  <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Services</a>
-                  <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Contact</a>
+                  <a href="#products" class="block px-4 py-2 rounded hover:bg-gray-100">Products</a>
+                  <a href="#about" class="block px-4 py-2 rounded hover:bg-gray-100">About</a>
+                  <a href="#services" class="block px-4 py-2 rounded hover:bg-gray-100">Services</a>
+                  <a href="#contact" class="block px-4 py-2 rounded hover:bg-gray-100">Contact</a>
                   <a href="#"
-                        class="block px-4 py-2 rounded bg-indigo-600 text-white text-center hover:bg-indigo-700">Get
-                        Started</a>
+                        class="block px-4 py-2 rounded bg-orange-500 text-white text-center hover:bg-orange-600">Order
+                        Now</a>
             </div>
       </header>
 
 
       <!-- section hero -->
       <section class="relative bg-gradient-to-r from-orange-500 via-red-500 to-red-600 text-white overflow-hidden">
-            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between  px-6">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-16">
                   <!-- Hero Text -->
                   <div class="md:w-1/2 text-center md:text-left">
-                        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
-                              Burger Juicy, Kopi Harum, Semua dalam Satu Gigitan
+                        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-fadeIn">
+                              Burco Burger's
                         </h1>
-                        <p class="text-lg md:text-2xl font-light mb-6">
-                              "Nikmati perpaduan sempurna antara burger premium dan kopi pilihan kami. Sajian yang
-                              dibuat untuk memuaskan selera Anda, kapan saja!"
+                        <p class="text-lg md:text-2xl font-light mb-6 animate-fadeIn delay-100">
+                              "Experience the perfect combination of our premium burgers and freshly brewed coffee. A
+                              treat designed to satisfy your cravings, anytime!"
                         </p>
-                        <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                        <div
+                              class="flex flex-col md:flex-row gap-4 justify-center md:justify-start animate-fadeIn delay-200">
                               <a href="#menu"
                                     class="bg-white text-orange-600 font-medium px-6 py-3 rounded-full shadow-md hover:bg-orange-200 transition duration-300">
                                     View Menu
@@ -79,19 +86,12 @@
                               </a>
                         </div>
                   </div>
-
                   <!-- Hero Image -->
                   <div class="md:w-1/2 mt-8 md:mt-0 relative">
-                        <img src="images/kober2.svg" alt="Burger and Coffee"
-                              class="rounded-lg animate-floating">
+                        <img src="images/burher.svg" alt="Burger and Coffee" class="rounded-lg animate-floating">
                   </div>
             </div>
-
-            <!-- Decorative Elements -->
-            <div class="absolute top-0 left-0 w-16 h-16 bg-white rounded-full opacity-20"></div>
-            <div class="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-full opacity-30"></div>
       </section>
-
       <style>
             /* Animasi untuk gambar */
             @keyframes floating {
@@ -111,15 +111,13 @@
             }
       </style>
 
-
-
-      <!-- section producct -->
+      <!-- Section: Products -->
       <section id="products" class="bg-gradient-to-br from-orange-100 via-orange-200 to-red-100 py-16">
             <div class="container mx-auto text-center">
                   <!-- Section Heading -->
-                  <h2 class="text-4xl font-extrabold text-orange-600 mb-4">Menu Paket Spesial</h2>
+                  <h2 class="text-4xl font-extrabold text-orange-600 mb-4">Special Combo Menu</h2>
                   <p class="text-lg text-gray-700 mb-12">
-                        Kombinasi sempurna untuk memanjakan lidah Anda. Pilih paket favorit Anda!
+                        The perfect combination to satisfy your taste buds. Pick your favorite combo now!
                   </p>
 
                   <!-- Product Cards -->
@@ -127,201 +125,424 @@
                         <!-- Product 1 -->
                         <div
                               class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                              <img src="images/kober2.svg" alt="Burger Classic Combo" class="w-full h-48 object-cover">
+                              <img src="images/black.webp" alt="Classic Burger Combo" class="w-full h-48 object-cover">
                               <div class="p-6">
                                     <h3 class="text-xl font-bold text-orange-600 mb-2">Classic Burger Combo</h3>
                                     <p class="text-gray-600 text-sm mb-4">
-                                          Burger klasik dengan daging premium, roti lembut, dan kopi Americano yang
-                                          harum.
+                                          A classic burger with premium beef, soft buns, and a rich Americano coffee.
                                     </p>
-                                    <p class="text-orange-600 font-bold text-lg">Rp 30.000</p>
-                                    <a href="#order"
-                                          class="block mt-4 bg-orange-500 text-white py-2 px-4 rounded-full text-center hover:bg-orange-600 transition duration-300">
-                                          Order Now
-                                    </a>
+                                    <p class="text-orange-600 font-bold text-lg">Rp 25.000</p>
                               </div>
                         </div>
 
                         <!-- Product 2 -->
                         <div
                               class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                              <img src="images/kober2.svg" alt="Cheese Burger Combo" class="w-full h-48 object-cover">
+                              <img src="images/more.webp" alt="Cheese Burger Combo" class="w-full h-48 object-cover">
                               <div class="p-6">
                                     <h3 class="text-xl font-bold text-orange-600 mb-2">Cheese Burger Combo</h3>
                                     <p class="text-gray-600 text-sm mb-4">
-                                          Perpaduan keju meleleh, daging juicy, dan kopi latte yang nikmat.
+                                          A perfect blend of melted cheese, juicy beef, and a creamy latte coffee.
                                     </p>
                                     <p class="text-orange-600 font-bold text-lg">Rp 35.000</p>
-                                    <a href="#order"
-                                          class="block mt-4 bg-orange-500 text-white py-2 px-4 rounded-full text-center hover:bg-orange-600 transition duration-300">
-                                          Order Now
-                                    </a>
                               </div>
                         </div>
 
                         <!-- Product 3 -->
                         <div
                               class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                              <img src="images/kober2.svg" alt="Double Burger Combo" class="w-full h-48 object-cover">
+                              <img src="images/black.webp" alt="Double Burger Combo" class="w-full h-48 object-cover">
                               <div class="p-6">
                                     <h3 class="text-xl font-bold text-orange-600 mb-2">Double Burger Combo</h3>
                                     <p class="text-gray-600 text-sm mb-4">
-                                          Dua lapis daging, saus spesial, dan es kopi cold brew untuk energi ekstra.
+                                          Double the beef, special sauce, and refreshing cold brew coffee for extra
+                                          energy.
                                     </p>
                                     <p class="text-orange-600 font-bold text-lg">Rp 40.000</p>
-                                    <a href="#order"
-                                          class="block mt-4 bg-orange-500 text-white py-2 px-4 rounded-full text-center hover:bg-orange-600 transition duration-300">
-                                          Order Now
-                                    </a>
                               </div>
                         </div>
                   </div>
             </div>
       </section>
-      <!--  -->
+      <!-- Section: Tentang Kami -->
+      <section id="about" class="bg-gradient-to-br from-orange-100 via-orange-200 to-red-100 py-16">
+            <div class="container mx-auto px-6">
+                  <div class="text-center">
+                        <!-- Section Heading -->
+                        <h2 class="text-4xl font-extrabold text-orange-600 mb-4 animate-fadeIn">
+                              Tentang Kami
+                        </h2>
+                        <p class="text-lg text-gray-700 mb-12 animate-fadeIn delay-100">
+                              Kami adalah tempat di mana cita rasa dan kualitas bertemu, menyediakan burger lezat dan
+                              kopi premium untuk memenuhi kebutuhan kuliner Anda. Dengan bahan-bahan terbaik dan
+                              pelayanan yang ramah, kami berkomitmen untuk memberikan pengalaman makan yang tak
+                              terlupakan.
+                        </p>
+                  </div>
 
-      <section id="testimonials" class="bg-gray-100 py-16">
+                  <!-- Brand Values -->
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Value 1 -->
+                        <div
+                              class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300 animate-fadeIn delay-200">
+                              <div class="text-orange-600 mb-4 hover:text-red-600 transition duration-300">
+                                    <i class="fas fa-leaf text-5xl"></i>
+                              </div>
+                              <h3 class="text-xl font-bold text-gray-800 mb-2">Bahan Berkualitas</h3>
+                              <p class="text-gray-600 text-sm mb-4">
+                                    Kami hanya menggunakan bahan berkualitas tinggi untuk memberikan cita rasa terbaik
+                                    di setiap gigitan.
+                              </p>
+                        </div>
+
+                        <!-- Value 2 -->
+                        <div
+                              class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300 animate-fadeIn delay-300">
+                              <div class="text-orange-600 mb-4 hover:text-red-600 transition duration-300">
+                                    <i class="fas fa-heart text-5xl"></i>
+                              </div>
+                              <h3 class="text-xl font-bold text-gray-800 mb-2">Cinta Dalam Setiap Hidangan</h3>
+                              <p class="text-gray-600 text-sm mb-4">
+                                    Kami menyajikan setiap hidangan dengan cinta, memastikan setiap detailnya sempurna
+                                    dan memuaskan.
+                              </p>
+                        </div>
+
+                        <!-- Value 3 -->
+                        <div
+                              class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300 animate-fadeIn delay-400">
+                              <div class="text-orange-600 mb-4 hover:text-red-600 transition duration-300">
+                                    <i class="fas fa-users text-5xl"></i>
+                              </div>
+                              <h3 class="text-xl font-bold text-gray-800 mb-2">Pelayanan Terbaik</h3>
+                              <p class="text-gray-600 text-sm mb-4">
+                                    Tim kami selalu siap memberikan pelayanan terbaik untuk memastikan pengalaman Anda
+                                    selalu memuaskan.
+                              </p>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- Animasi CSS -->
+      <style>
+            /* Animasi fadeIn */
+            @keyframes fadeIn {
+                  0% {
+                        opacity: 0;
+                        transform: translateY(20px);
+                  }
+
+                  100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                  }
+            }
+
+            .animate-fadeIn {
+                  animation: fadeIn 1s ease-out forwards;
+            }
+
+            .animate-fadeIn.delay-100 {
+                  animation-delay: 0.1s;
+            }
+
+            .animate-fadeIn.delay-200 {
+                  animation-delay: 0.2s;
+            }
+
+            .animate-fadeIn.delay-300 {
+                  animation-delay: 0.3s;
+            }
+
+            .animate-fadeIn.delay-400 {
+                  animation-delay: 0.4s;
+            }
+      </style>
+
+      <!--Section Testimoni -->
+      <section id="testimonials" class="bg-gray-100 py-16 overflow-hidden">
             <div class="container mx-auto text-center">
                   <!-- Section Heading -->
                   <h2 class="text-4xl font-extrabold text-orange-600 mb-4">Apa Kata Pelanggan Kami?</h2>
                   <p class="text-lg text-gray-700 mb-12">
-                        Ulasan jujur dari pelanggan setia kami yang sudah merasakan kenikmatan burger dan kopi kami.
+                        Ulasan jujur dari pelanggan setia kami yang sudah merasakan kenikmatan burger dan kopi
+                        kami.
                   </p>
 
-                  <!-- Testimonial Cards -->
-                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Testimonial 1 -->
-                        <div
-                              class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                              <div class="flex items-center mb-4">
-                                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=100"
-                                          alt="Customer 1" class="w-12 h-12 rounded-full mr-4">
-                                    <div>
-                                          <h3 class="text-lg font-bold text-gray-800">Ahmad Rizky</h3>
-                                          <p class="text-sm text-gray-500">Pelanggan Setia</p>
+                  <!-- Marquee Wrapper -->
+                  <div class="relative w-full overflow-hidden">
+                        <div class="flex space-x-8 animate-marquee hover:paused gap-8">
+                              <!-- Testimonial Cards -->
+                              <!-- Testimonial 1 -->
+                              <div
+                                    class="bg-white shadow-lg rounded-lg p-6 flex-shrink-0 w-[360px] transform hover:scale-105 transition duration-300">
+                                    <div class="flex items-center mb-4">
+                                          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=100"
+                                                alt="Customer 1" class="w-12 h-12 rounded-full mr-4">
+                                          <div>
+                                                <h3 class="text-lg font-bold text-gray-800">Ahmad Rizky</h3>
+                                                <p class="text-sm text-gray-500">Pelanggan Setia</p>
+                                          </div>
                                     </div>
+                                    <p class="text-gray-600">"Burgernya juicy banget, rasanya benar-benar beda
+                                          dari yang lain! Kopinya juga pas banget, bikin pagi saya lebih
+                                          semangat."</p>
                               </div>
-                              <p class="text-gray-600">
-                                    "Burgernya juicy banget, rasanya benar-benar beda dari yang lain! Kopinya juga pas
-                                    banget, bikin pagi saya lebih semangat."
-                              </p>
-                        </div>
 
-                        <!-- Testimonial 2 -->
-                        <div
-                              class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                              <div class="flex items-center mb-4">
-                                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=100"
-                                          alt="Customer 2" class="w-12 h-12 rounded-full mr-4">
-                                    <div>
-                                          <h3 class="text-lg font-bold text-gray-800">Siti Nurhaliza</h3>
-                                          <p class="text-sm text-gray-500">Food Blogger</p>
+                              <!-- Testimonial 2 -->
+                              <div
+                                    class="bg-white shadow-lg rounded-lg p-6 flex-shrink-0 w-[360px] transform hover:scale-105 transition duration-300">
+                                    <div class="flex items-center mb-4">
+                                          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=100"
+                                                alt="Customer 2" class="w-12 h-12 rounded-full mr-4">
+                                          <div>
+                                                <h3 class="text-lg font-bold text-gray-800">Siti Nurhaliza</h3>
+                                                <p class="text-sm text-gray-500">Food Blogger</p>
+                                          </div>
                                     </div>
+                                    <p class="text-gray-600">"Paket burger dan kopinya bikin ketagihan.
+                                          Presentasinya cantik, rasanya enak, dan harganya terjangkau!"</p>
                               </div>
-                              <p class="text-gray-600">
-                                    "Paket burger dan kopinya bikin ketagihan. Presentasinya cantik, rasanya enak, dan
-                                    harganya terjangkau!"
-                              </p>
-                        </div>
 
-                        <!-- Testimonial 3 -->
-                        <div
-                              class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                              <div class="flex items-center mb-4">
-                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=100"
-                                          alt="Customer 3" class="w-12 h-12 rounded-full mr-4">
-                                    <div>
-                                          <h3 class="text-lg font-bold text-gray-800">Budi Santoso</h3>
-                                          <p class="text-sm text-gray-500">Pelanggan Baru</p>
+                              <!-- Testimonial 3 -->
+                              <div
+                                    class="bg-white shadow-lg rounded-lg p-6 flex-shrink-0 w-[360px] transform hover:scale-105 transition duration-300">
+                                    <div class="flex items-center mb-4">
+                                          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=100"
+                                                alt="Customer 3" class="w-12 h-12 rounded-full mr-4">
+                                          <div>
+                                                <h3 class="text-lg font-bold text-gray-800">Budi Santoso</h3>
+                                                <p class="text-sm text-gray-500">Pelanggan Baru</p>
+                                          </div>
                                     </div>
+                                    <p class="text-gray-600">"Saya mencoba paket ini untuk pertama kalinya, dan
+                                          itu keputusan terbaik saya! Rasa yang luar biasa dan layanan cepat."</p>
                               </div>
-                              <p class="text-gray-600">
-                                    "Saya mencoba paket ini untuk pertama kalinya, dan itu keputusan terbaik saya! Rasa
-                                    yang luar biasa dan layanan cepat."
-                              </p>
+
                         </div>
                   </div>
             </div>
+
+
+            <!-- CSS for Marquee Animation -->
+            <style>
+                  @keyframes marquee {
+                        0% {
+                              transform: translateX(100%);
+                        }
+
+                        100% {
+                              transform: translateX(-100%);
+                        }
+                  }
+
+                  .animate-marquee {
+                        display: flex;
+                        animation: marquee 30s linear infinite;
+                  }
+
+                  .animate-marquee:hover {
+                        animation-play-state: paused;
+                  }
+            </style>
       </section>
-      <!-- Section About -->
-      <section id="about" class="bg-gray-50 py-16">
+
+
+      <!-- Section Services -->
+      <section id="services" class="bg-gray-50 py-16">
             <div class="container mx-auto text-center">
                   <!-- Section Heading -->
-                  <h2 class="text-4xl font-extrabold text-orange-600 mb-4">Tentang Kami</h2>
-                  <p class="text-lg text-gray-700 mb-8">
-                        Kami adalah perusahaan yang menyediakan berbagai pilihan burger premium dan kopi berkualitas
-                        tinggi.
-                        Misi kami adalah menghadirkan pengalaman kuliner yang menyenangkan dengan kombinasi rasa yang
-                        unik dan layanan terbaik.
+                  <h2 class="text-4xl font-extrabold text-orange-600 mb-4">Layanan Kami</h2>
+                  <p class="text-lg text-gray-700 mb-12">
+                        Kami menawarkan berbagai layanan untuk memberikan pengalaman kuliner yang tak terlupakan.
+                        Jelajahi pilihan layanan kami di bawah ini!
                   </p>
 
-                  <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-                        <!-- About Image -->
-                        <div class="md:w-1/2">
-                              <img src="images/burco.svg" alt="About Us" class="rounded-lg shadow-lg w-full">
+                  <!-- Service Cards -->
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Service 1 -->
+                        <div
+                              class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
+                              <div class="text-orange-600 mb-4">
+                                    <i class="fas fa-concierge-bell text-4xl"></i>
+                              </div>
+                              <h3 class="text-xl font-bold text-gray-800 mb-2">Layanan Pengantaran</h3>
+                              <p class="text-gray-600 text-sm mb-4">
+                                    Nikmati burger dan kopi favorit Anda dengan layanan pengantaran cepat ke rumah
+                                    atau
+                                    kantor.
+                              </p>
+                              <a href="#contact"
+                                    class="block mt-4 bg-orange-500 text-white py-2 px-4 rounded-full text-center hover:bg-orange-600 transition duration-300">
+                                    Order Now
+                              </a>
                         </div>
 
-                        <!-- About Content -->
-                        <div class="md:w-1/2 text-left">
-                              <h3 class="text-2xl font-bold text-orange-600 mb-4">Visi dan Misi Kami</h3>
-                              <p class="text-lg text-gray-700 mb-4">
-                                    Visi kami adalah menjadi tempat pilihan pertama untuk menikmati burger dan kopi
-                                    terbaik. Kami berkomitmen
-                                    untuk menggunakan bahan berkualitas tinggi dan menyajikan hidangan dengan standar
-                                    tertinggi.
+                        <!-- Service 2 -->
+                        <div
+                              class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
+                              <div class="text-orange-600 mb-4">
+                                    <i class="fas fa-gift text-4xl"></i>
+                              </div>
+                              <h3 class="text-xl font-bold text-gray-800 mb-2">Paket Spesial</h3>
+                              <p class="text-gray-600 text-sm mb-4">
+                                    Dapatkan paket spesial yang dapat memanjakan lidah Anda dan teman-teman dalam
+                                    satu
+                                    gigitan.
                               </p>
-                              <p class="text-lg text-gray-700 mb-4">
-                                    Misi kami adalah memberikan pengalaman kuliner yang mengesankan dan memuaskan dengan
-                                    pelayanan ramah
-                                    dan harga yang terjangkau.
+                              <a href="#products"
+                                    class="block mt-4 bg-orange-500 text-white py-2 px-4 rounded-full text-center hover:bg-orange-600 transition duration-300">
+                                    Lihat Paket
+                              </a>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div
+                              class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
+                              <div class="text-orange-600 mb-4">
+                                    <i class="fas fa-headset text-4xl"></i>
+                              </div>
+                              <h3 class="text-xl font-bold text-gray-800 mb-2">Layanan Pelanggan</h3>
+                              <p class="text-gray-600 text-sm mb-4">
+                                    Tim layanan pelanggan kami siap membantu Anda dengan pertanyaan atau masalah
+                                    apa
+                                    pun.
                               </p>
+                              <a href="#contact"
+                                    class="block mt-4 bg-orange-500 text-white py-2 px-4 rounded-full text-center hover:bg-orange-600 transition duration-300">
+                                    Hubungi Kami
+                              </a>
                         </div>
                   </div>
             </div>
       </section>
+      <!-- Animasi CSS -->
+      <style>
+            /* Animasi fadeIn */
+            @keyframes fadeIn {
+                  0% {
+                        opacity: 0;
+                        transform: translateY(20px);
+                  }
+
+                  100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                  }
+            }
+
+            .animate-fadeIn {
+                  animation: fadeIn 1s ease-out forwards;
+            }
+
+            .animate-fadeIn.delay-100 {
+                  animation-delay: 0.1s;
+            }
+
+            .animate-fadeIn.delay-200 {
+                  animation-delay: 0.2s;
+            }
+
+            .animate-fadeIn.delay-300 {
+                  animation-delay: 0.3s;
+            }
+
+            .animate-fadeIn.delay-400 {
+                  animation-delay: 0.4s;
+            }
+
+            .animate-fadeIn.delay-500 {
+                  animation-delay: 0.5s;
+            }
+
+            .animate-fadeIn.delay-600 {
+                  animation-delay: 0.6s;
+            }
+      </style>
+
+      <!-- Section: Contact Form -->
+      <section id="contact" class="bg-gradient-to-br from-orange-50 via-orange-100 to-red-50 py-20">
+            <div class="container mx-auto px-6">
+                  <div class="text-center">
+                        <!-- Section Heading -->
+                        <h2 class="text-4xl font-extrabold text-orange-600 mb-4">Hubungi Kami</h2>
+                        <p class="text-lg text-gray-700 mb-12">
+                              Silakan isi formulir di bawah ini dan kami akan segera menghubungi Anda melalui WhatsApp.
+                        </p>
+                  </div>
+
+                  <!-- Contact Form -->
+                  <div class="max-w-2xl mx-auto bg-white shadow-xl rounded-2xl p-8">
+                        <form id="contact-form" action="https://wa.me/6281234567890" method="GET" target="_blank">
+                              <div class="mb-8">
+                                    <label for="name"
+                                          class="block text-gray-700 text-sm font-semibold mb-2">Nama</label>
+                                    <input type="text" id="name" name="name"
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition duration-300"
+                                          required>
+                              </div>
+                              <div class="mb-8">
+                                    <label for="email"
+                                          class="block text-gray-700 text-sm font-semibold mb-2">Email</label>
+                                    <input type="email" id="email" name="email"
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition duration-300"
+                                          required>
+                              </div>
+                              <div class="mb-8">
+                                    <label for="message"
+                                          class="block text-gray-700 text-sm font-semibold mb-2">Pesan</label>
+                                    <textarea id="message" name="message" rows="5"
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition duration-300"
+                                          required></textarea>
+                              </div>
+                              <div class="text-center">
+                                    <button type="submit"
+                                          class="bg-orange-500 text-white px-8 py-3 rounded-full shadow-lg hover:bg-orange-600 hover:shadow-xl transition duration-300 transform hover:scale-105">
+                                          Kirim via WhatsApp
+                                    </button>
+                              </div>
+                        </form>
+                  </div>
+            </div>
+      </section>
+      <script>
+            document.getElementById('contact-form').addEventListener('submit', function (e) {
+                  e.preventDefault();
+
+                  const name = document.getElementById('name').value;
+                  const email = document.getElementById('email').value;
+                  const message = document.getElementById('message').value;
+
+                  const whatsappUrl = `https://wa.me/628000000?text=Nama:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0APesan:%20${encodeURIComponent(message)}`;
+
+                  window.open(whatsappUrl, '_blank');
+            });
+      </script>
 
       <!-- Footer Section -->
       <footer class="bg-gray-800 text-gray-200 py-8">
             <div class="container mx-auto px-4">
                   <div class="flex flex-col md:flex-row justify-between items-center">
-                        <!-- Logo and Description -->
                         <div class="mb-6 md:mb-0 text-center md:text-left">
                               <h3 class="text-xl font-bold text-orange-500 mb-2">B U R C O</h3>
-                              <p class="text-sm">
-                                    Kami menyediakan layanan terbaik untuk memenuhi kebutuhan Anda.
-                                    Terima kasih telah memilih kami!
-                              </p>
+                              <p class="text-sm">Kami menyediakan layanan terbaik untuk memenuhi kebutuhan Anda.</p>
                         </div>
-
-                        <!-- Navigation Links -->
                         <div class="flex flex-col md:flex-row items-center gap-6">
                               <a href="#about" class="text-sm hover:text-orange-500">Tentang Kami</a>
                               <a href="#services" class="text-sm hover:text-orange-500">Layanan</a>
                               <a href="#contact" class="text-sm hover:text-orange-500">Kontak</a>
                         </div>
                   </div>
-
                   <div class="mt-8 text-center">
-                        <!-- Social Media Links -->
                         <div class="flex justify-center gap-4 mb-4">
-                              <a href="#" class="text-gray-400 hover:text-orange-500">
-                                    <i class="fab fa-facebook-f"></i>
-                              </a>
-                              <a href="#" class="text-gray-400 hover:text-orange-500">
-                                    <i class="fab fa-twitter"></i>
-                              </a>
-                              <a href="#" class="text-gray-400 hover:text-orange-500">
-                                    <i class="fab fa-instagram"></i>
-                              </a>
-                              <a href="#" class="text-gray-400 hover:text-orange-500">
-                                    <i class="fab fa-linkedin-in"></i>
-                              </a>
+                              <a href="#" class="text-gray-400 hover:text-orange-500"><i
+                                          class="fab fa-facebook-f"></i></a>
+                              <a href="#" class="text-gray-400 hover:text-orange-500"><i
+                                          class="fab fa-instagram"></i></a>
+                              <a href="#" class="text-gray-400 hover:text-orange-500"><i class="fab fa-twitter"></i></a>
                         </div>
-
-                        <!-- Copyright -->
-                        <p class="text-sm text-gray-500">
-                              &copy; 2025 Nama Bisnis Anda. Semua Hak Dilindungi.
-                        </p>
+                        <p class="text-sm text-gray-500">&copy; 2025 Burco. Semua Hak Dilindungi.</p>
                   </div>
             </div>
       </footer>
@@ -335,6 +556,10 @@
                   mobileMenu.classList.toggle('hidden');
             });
       </script>
+
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
